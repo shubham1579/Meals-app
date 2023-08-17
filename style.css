@@ -1,0 +1,112 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+    font-family: math;
+}
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Header */
+.header {
+    background-color: #34495e;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+.search-container {
+    flex-grow: 1;
+    margin-left: 2rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #ecf0f1;
+}
+
+/* Main Content */
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Search Section */
+.search-section {
+    flex-grow: 2;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+/* Favorites Section */
+.favorites-section {
+    padding-left: 2rem;
+}
+
+.favorites-list {
+    list-style: none;
+    padding: 0;
+}
+
+.favorite-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.favorite-name {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+.favorite-remove {
+    color: red;
+    cursor: pointer;
+}
