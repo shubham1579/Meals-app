@@ -111,6 +111,7 @@ body {
     cursor: pointer;
 }
 
+/* for tablets like screens */
 @media (max-width: 768px) {
     .main-container {
         grid-template-columns: 1fr;
@@ -126,6 +127,7 @@ body {
     }
 }
 
+/* for more smaller screens */
 @media (max-width: 576px) {
     .search-input {
         padding: 0.4rem;

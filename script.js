@@ -8,7 +8,7 @@ let favorites = [];
 // Event listener for search input
 searchInput.addEventListener('input', debounce(searchMeals, 300));
 
-// Fetch and display search results
+// Fetching and display search results
 function searchMeals() {
     const searchTerm = searchInput.value.trim();
     if (searchTerm === '') {
